@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MyWeatherApp</title>
+    <!--my stylesheet-->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="wrapper">
         <!-- First section/container -->
-        <div class="header"><i class='bx bx-arrow-back' onClick="window.location.reload();" id="toparrow"></i>MyWeatherApp</div>
+        <div class="header"><i class='bx bx-arrow-back' onClick="window.location.reload();"
+                id="toparrow"></i>MyWeatherApp</div>
         <div id="locationweather">
             <p class="message">Enter a valid city name</p>
             <p class="message-appended"></p>
@@ -17,8 +22,8 @@
             <div class="line-seperator"></div>
             <button id="userdevicelocation">MyLocation</button>
         </div>
-         <!-- Second section/container -->
-         <div id="weather">
+        <!-- Second section/container -->
+        <div id="weather">
             <div class="location">
                 <div class="loc">
                     <i class='bx bx-map'></i>
@@ -47,6 +52,8 @@
             </div>
         </div>
     </div>
-    </div>
+
+    <script src="file.js"></script>
 </body>
+
 </html>
