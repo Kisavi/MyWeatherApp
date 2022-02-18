@@ -56,3 +56,21 @@ function hideTemperature() {
     y.style.display = "block";
     z.style.display = "none";
 };
+
+//getting info when user presses MyLocation button
+
+function getLocation() {
+    navigator.geolocation.getCurrentPosition(userPosition);
+
+    function userPosition(position) {
+        // console.log(position);
+        lon = position.coords.longitude;
+        lat = position.coords.latitude;
+
+        const API = "54fdf9a20ad41b91f02e0e541cafadd9";
+        const base = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
+            `lon=${lon}&appid=54fdf9a20ad41b91f02e0e541cafadd9`;
+
+        fetchData(base);
+    };
+};
