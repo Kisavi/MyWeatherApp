@@ -30,3 +30,29 @@ function requestApi(city) {
 
     fetchData(Api)
 };
+
+//hiding and displaying the two containers upon button clicks
+document.getElementById("userdevicelocation").addEventListener("click", combinedFunctions)
+
+function combinedFunctions() {
+    displayTemperature();
+    getLocation();
+};
+
+let x = document.getElementById("weather");
+let y = document.getElementById("locationweather");
+let z = document.getElementById("toparrow");
+
+function displayTemperature() {
+    x.style.display = "block";
+    y.style.display = "none";
+    z.style.display = "block";
+};
+
+document.getElementById("toparrow").addEventListener("click", hideTemperature)
+
+function hideTemperature() {
+    x.style.display = "none";
+    y.style.display = "block";
+    z.style.display = "none";
+};
