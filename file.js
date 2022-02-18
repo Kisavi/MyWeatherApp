@@ -85,7 +85,6 @@ function fetchData(base) {
         return response.json();
     };
 
-
     function apiData(data) {
         if (data.cod === "404") {
             correct.classList.add("message-error");
