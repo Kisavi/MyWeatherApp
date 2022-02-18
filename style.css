@@ -61,3 +61,13 @@
 .message-error {
    color: #ff051e;
 }
+
+#locationweather input,
+ button {
+     height: 2.5em;
+     border: 1px solid #bfbfbf;
+     outline: none;
+     text-align: center;
+     border-radius: 5px;
+     width: 100%;
+ }
