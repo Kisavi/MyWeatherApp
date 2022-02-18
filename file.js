@@ -21,3 +21,12 @@ function checkInputValue(e) {
         window.location.reload()
     }
 };
+
+function requestApi(city) {
+    let Api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=54fdf9a20ad41b91f02e0e541cafadd9`
+    correct.textContent = ""
+    correct.classList.remove("message-error");
+    correct.classList.add("message-appended")
+
+    fetchData(Api)
+};
