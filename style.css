@@ -12,3 +12,17 @@
     background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
     font-family: sans-serif;
 }
+
+.wrapper {
+    background: #fff;
+    width: 30%;
+    border-radius: 7px;
+}
+
+.wrapper .header {
+    display: flex;
+    color: #43affc;
+    padding: 15px;
+    border-bottom: 1px solid #bfbfbf;
+    font-weight: 700;
+}
