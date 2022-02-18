@@ -71,3 +71,20 @@
      border-radius: 5px;
      width: 100%;
  }
+
+ .line-seperator {
+    height: 0.01em;
+    background: #ccc;
+    margin: 1.4em 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-seperator::before {
+    content: "or";
+    background: white;
+    padding: 0 0.5em;
+    color: rgb(0, 0, 0);
+}
