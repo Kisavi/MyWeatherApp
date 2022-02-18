@@ -26,3 +26,14 @@
     border-bottom: 1px solid #bfbfbf;
     font-weight: 700;
 }
+
+#toparrow {
+    margin-right: 0.5em;
+    font-size: 1.3em;
+    cursor: pointer;
+    display: none;
+}
+
+#locationweather {
+    margin: 1.2em;
+}
