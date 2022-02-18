@@ -140,3 +140,12 @@ button {
     align-items: center;
     padding: 0.5em;
 }
+
+.rightsection {
+    border-right: 1px solid #bfbfbf;
+}
+
+.icon {
+    color: #43affc;
+    font-size: 1.5em;
+}
