@@ -88,3 +88,55 @@
     padding: 0 0.5em;
     color: rgb(0, 0, 0);
 }
+
+button {
+    background: #43affc;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#weather {
+    display: none;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.loc {
+    display: flex;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-top: 1px solid #bfbfbf;
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.buttom-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
