@@ -74,3 +74,36 @@ function getLocation() {
         fetchData(base);
     };
 };
+
+function fetchData(base) {
+    fetch(base)
+        .then(apiInfo)
+        .then(apiData)
+
+    function apiInfo(response) {
+        // console.log(response);
+        return response.json();
+    };
+
+
+    function apiData(data) {
+        if (data.cod === "404") {
+            correct.classList.add("message-error");
+            correct.textContent = `${inputtxt.value} is not a valid City Name`;
+        } else {
+            correct.textContent = "Fetching the weather data..."
+
+            var theDelay = 1;
+            var timer = setTimeout("displayTemperature()", theDelay * 900)
+
+            temperature.textContent =
+                Math.floor(data.main.temp - kelvin);
+            area.textContent = data.name + "," + data.sys.country;
+            description.textContent = data.weather[0].description;
+            humidity.textContent = data.main.humidity + "%";
+            wind.textContent = data.wind.speed + "km/h";
+            const icon = data.weather[0].icon;
+            weathericon.innerHTML = `<img src="icons/${icon}.png" height="65em">`;
+        };
+    };
+};
