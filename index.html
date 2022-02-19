@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWeatherApp</title>
+    <!--boxicons css style sheet-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!--my stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- First section/container -->
+        <div class="header"><i class='bx bx-arrow-back' onClick="window.location.reload();"
+                id="toparrow"></i>MyWeatherApp</div>
+        <div id="locationweather">
+            <p class="message">Enter a valid city name</p>
+            <p class="message-appended"></p>
+            <input class="city" type="text" placeholder="Enter City Name">
+            <div class="line-seperator"></div>
+            <button id="userdevicelocation">MyLocation</button>
+        </div>
+        <!-- Second section/container -->
+        <div id="weather">
+            <div class="location">
+                <div class="loc">
+                    <i class='bx bx-map'></i>
+                    <p class="area"></p>
+                </div>
+                <div class="weathericon"></div>
+            </div>
+            <div class="temp">
+                <i class='bx bxs-thermometer'></i>
+                <p><span class="temperature"></span>&nbsp;<sup>&#176;</sup>c</p>
+            </div>
+            <div class="description">
+                <p></p>
+            </div>
+            <div class="buttom-section">
+                <div class="buttom-details rightsection">
+                    <i class='bx bxs-droplet-half icon'></i>
+                    <p class="humidity"></p>
+                    <p>Humidity</p>
+                </div>
+                <div class="buttom-details">
+                    <i class='bx bx-wind icon'></i>
+                    <p class="wind"></p>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="file.js"></script>
+</body>
+
+</html>

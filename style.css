@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
+    font-family: sans-serif;
+}
+
+.wrapper {
+    background: #fff;
+    width: 30%;
+    border-radius: 7px;
+}
+
+.wrapper .header {
+    display: flex;
+    color: #43affc;
+    padding: 15px;
+    border-bottom: 1px solid #bfbfbf;
+    font-weight: 700;
+}
+
+#toparrow {
+    margin-right: 0.5em;
+    font-size: 1.3em;
+    cursor: pointer;
+    display: none;
+}
+
+#locationweather {
+    margin: 1.2em;
+}
+
+.message {
+    text-align: center;
+    padding: 0.7em;
+    border-radius: 5px;
+    font-size: 0.8em;
+    margin-bottom: 0.7em;
+    display: none;
+}
+
+.message-appended,
+.message-error {
+    /* padding: 0.5em;  */
+    margin-bottom: 0.6em;
+    font-size: 0.8em;
+    border-radius: 5px;
+    text-align: center;
+    /* background: #d1ecf1;  */
+    color: #64a56c;
+    border: none;
+}
+
+.message-error {
+    color: #ff051e;
+}
+
+#locationweather input,
+button {
+    height: 2.5em;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.line-seperator {
+    height: 0.01em;
+    background: #ccc;
+    margin: 1.4em 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-seperator::before {
+    content: "or";
+    background: white;
+    padding: 0 0.5em;
+    color: rgb(0, 0, 0);
+}
+
+button {
+    background: #43affc;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#weather {
+    display: none;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.loc {
+    display: flex;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+}
+
+.buttom-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    border-top: 1px solid #bfbfbf;
+    margin-top: 1.5em;
+    padding: 0;
+}
+
+.buttom-details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.rightsection {
+    border-right: 1px solid #bfbfbf;
+}
+
+.icon {
+    color: #43affc;
+    font-size: 1.5em;
+}
