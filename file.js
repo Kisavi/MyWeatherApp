@@ -81,11 +81,12 @@ function fetchData(base) {
         .then(apiData)
 
     function apiInfo(response) {
-        // console.log(response);
+         console.log(response);
         return response.json();
     };
 
     function apiData(data) {
+        console.log(data)
         if (data.cod === "404") {
             correct.classList.add("message-error");
             correct.textContent = `${inputtxt.value} is not a valid City Name`;

@@ -47,32 +47,33 @@
     display: none;
 }
 
-.message-appended, .message-error{
+.message-appended,
+.message-error {
     /* padding: 0.5em;  */
     margin-bottom: 0.6em;
     font-size: 0.8em;
     border-radius: 5px;
     text-align: center;
-     /* background: #d1ecf1;  */
+    /* background: #d1ecf1;  */
     color: #64a56c;
     border: none;
 }
 
 .message-error {
-   color: #ff051e;
+    color: #ff051e;
 }
 
 #locationweather input,
- button {
-     height: 2.5em;
-     border: 1px solid #bfbfbf;
-     outline: none;
-     text-align: center;
-     border-radius: 5px;
-     width: 100%;
- }
+button {
+    height: 2.5em;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+}
 
- .line-seperator {
+.line-seperator {
     height: 0.01em;
     background: #ccc;
     margin: 1.4em 0;
