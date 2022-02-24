@@ -68,7 +68,7 @@ function getLocation() {
         lat = position.coords.latitude;
 
         const API = "54fdf9a20ad41b91f02e0e541cafadd9";
-        const base = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
+        const base = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
             `lon=${lon}&appid=54fdf9a20ad41b91f02e0e541cafadd9`;
 
         fetchData(base);
