@@ -16,6 +16,7 @@
 .wrapper {
     background: #fff;
     width: 30%;
+    /* width: 30vw; */
     border-radius: 7px;
 }
 
@@ -25,6 +26,12 @@
     padding: 15px;
     border-bottom: 1px solid #bfbfbf;
     font-weight: 700;
+}
+
+.header {
+    font-size: larger;
+    display: flex;
+    align-content: center;
 }
 
 #toparrow {
@@ -49,12 +56,10 @@
 
 .message-appended,
 .message-error {
-    /* padding: 0.5em;  */
     margin-bottom: 0.6em;
-    font-size: 0.8em;
+    font-size: medium;
     border-radius: 5px;
     text-align: center;
-    /* background: #d1ecf1;  */
     color: #64a56c;
     border: none;
 }
@@ -65,7 +70,7 @@
 
 #locationweather input,
 button {
-    height: 2.5em;
+    height: 3.5em;
     border: 1px solid #bfbfbf;
     outline: none;
     text-align: center;
@@ -75,8 +80,8 @@ button {
 
 .line-seperator {
     height: 0.01em;
-    background: #ccc;
-    margin: 1.4em 0;
+    background: rgb(167, 163, 163);
+    margin:2em 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -88,6 +93,8 @@ button {
     background: white;
     padding: 0 0.5em;
     color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 700;
 }
 
 button {
@@ -101,6 +108,10 @@ button {
     display: none;
 }
 
+.city, #userdevicelocation {
+    font-size: larger;
+}
+
 .location {
     display: flex;
     align-items: center;
@@ -110,6 +121,7 @@ button {
 
 .loc {
     display: flex;
+    font-size: large;
 }
 
 .temp {
@@ -117,11 +129,20 @@ button {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    margin-bottom: 0.5rem;
 }
 
 .description {
     display: flex;
     justify-content: center;
+    font-size: large;
+    margin-bottom: 1rem;
+}
+
+.clothing {
+    display: flex;
+    justify-content: center;
+    font-size: large;
 }
 
 .buttom-section {
@@ -131,6 +152,7 @@ button {
     border-top: 1px solid #bfbfbf;
     margin-top: 1.5em;
     padding: 0;
+    font-size: large;
 }
 
 .buttom-details {

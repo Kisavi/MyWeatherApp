@@ -1,6 +1,7 @@
 //declaring variables
 let temperature = document.querySelector(".temperature");
 let description = document.querySelector(".description");
+let clothing = document.querySelector(".clothing");
 let humidity = document.querySelector(".humidity");
 let wind = document.querySelector(".wind");
 let area = document.querySelector(".area");
@@ -81,7 +82,7 @@ function fetchData(base) {
         .then(apiData)
 
     function apiInfo(response) {
-         console.log(response);
+        console.log(response);
         return response.json();
     };
 
@@ -95,9 +96,18 @@ function fetchData(base) {
 
             var theDelay = 1;
             var timer = setTimeout("displayTemperature()", theDelay * 900)
-
-            temperature.textContent =
-                Math.floor(data.main.temp - kelvin);
+            tempDegrees = Math.floor(data.main.temp - kelvin);
+            console.log(typeof( tempDegrees))
+            if (tempDegrees <= 10) {
+                clothing.textContent = "Remember to dress warmly"
+            } else if (tempDegrees <= 20) {
+                clothing.textContent = "Don't forget to carry a jacket"
+            } else if (tempDegrees <= 30) {
+                clothing.textContent = "A light sweater might be necessary"
+            } else {
+                clothing.textContent = "Remember to keep it cool"
+            }
+                temperature.textContent = tempDegrees;
             area.textContent = data.name + "," + data.sys.country;
             description.textContent = data.weather[0].description;
             humidity.textContent = data.main.humidity + "%";
