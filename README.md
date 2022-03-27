@@ -34,8 +34,7 @@ This application is a weather app and is dived into the following sections,
   + JavaScript - which was used to add functionality to the weather app including fetching weather data from an API.
   
   ## Reference
-  + Vanilla CSS
-  + Vanilla JS
+  + Openweathermap API
   
   ## License
   + MIT Licence
