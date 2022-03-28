@@ -15,27 +15,22 @@
 
 .wrapper {
     background: #fff;
-    width: 30%;
-    /* width: 30vw; */
+    width: 30vw;
     border-radius: 7px;
 }
 
 .wrapper .header {
     display: flex;
+    align-items: center;
     color: #43affc;
     padding: 15px;
     border-bottom: 1px solid #bfbfbf;
     font-weight: 700;
-}
-
-.header {
     font-size: larger;
-    display: flex;
-    align-content: center;
 }
 
 #toparrow {
-    margin-right: 0.5em;
+    margin-right: 0.2em;
     font-size: 1.3em;
     cursor: pointer;
     display: none;
@@ -70,7 +65,7 @@
 
 #locationweather input,
 button {
-    height: 3.5em;
+    height: 3rem;
     border: 1px solid #bfbfbf;
     outline: none;
     text-align: center;
@@ -171,4 +166,12 @@ button {
 .icon {
     color: #43affc;
     font-size: 1.5em;
+}
+
+/* media queries */
+@media only screen and (max-width :1024px) {
+    .wrapper {
+        width: 100vh;
+        margin: 2rem;
+    }
 }
